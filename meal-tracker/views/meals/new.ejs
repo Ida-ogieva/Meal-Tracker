@@ -8,6 +8,23 @@
     Welcome, <%=details.name%>
 </head>
 <body>
-    
+    <form action="/meals" method="POST">
+        <label>Breakfast:
+            <input name="breakfast">
+        </label><br>
+        <label>Lunch:
+            <input name="lunch">
+        </label><br>
+        <label>Dinner:
+            <input name="dinner">
+        </label><br>
+        <label>Other:
+            <input name="other">
+        </label><br>
+        <label>Date
+            <input name="date" type="date">
+        </label><br>
+        <input type="submit" value="log">
+    </form>
 </body>
 </html>
