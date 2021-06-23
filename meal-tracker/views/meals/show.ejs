@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('../partials/header') %>
     <% for (let post of meals.post){ %>
         <% if (post._id == id){ %>
             <li><%=post.date%></li>
@@ -16,5 +8,6 @@
             <li><%=post.other%></li>
         <% } %>
     <% } %>
+    <a href="/meals/<%=id%>/edit"><input type="submit" value="edit"></a>
 </body>
 </html>

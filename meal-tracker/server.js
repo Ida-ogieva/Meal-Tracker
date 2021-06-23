@@ -11,7 +11,7 @@ require('dotenv').config();
 var app = express();
 
 var logger = require('morgan');
-
+var methodOverride = require('method-override');
 
 require('./config/database');
 require('./config/passport');
@@ -37,6 +37,7 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
 
 app.use(passport.initialize());
 app.use(passport.session());
