@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
-    Welcome, <%=details.name%>
+    <p>Welcome, <%=details.name%></p>
     
-    <form action="/meals" method="POST">
+    <form action="/meals" method="POST" id="new-form">
         <label>Breakfast:
             <input name="breakfast">
         </label><br>
