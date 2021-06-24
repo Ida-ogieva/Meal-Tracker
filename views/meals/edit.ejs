@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
-<main>
-<div>
-    <form action="/meals/<%=id%>?_method=PUT" method="POST">
+<main class="homescreen">
+<div class="formpage">
+    <form action="/meals/<%=id%>?_method=PUT" method="POST" class="formdisplay">
         <label>Breakfast:</label>
         <input name="breakfast" value="<%=entry.breakfast %>">
         <label>Lunch:</label>
@@ -11,8 +11,8 @@
         <label>Other:</label>
         <input name="other" value="<%=entry.other%>">        
         <label>Date:</label>
-        <input name="date" value="<%=entry.date%>" type="date" >
-        <input type="submit" value="log">
+        <input name="date" value="<%=entry.date%>" type="date" required>
+        <input type="submit" value="save changes">
     </form>
 </div>
 </main>

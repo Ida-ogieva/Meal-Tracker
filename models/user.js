@@ -15,7 +15,7 @@ const mealSchema = new Schema ({
         require: true
     },
     other: String,
-    date: Date
+    date: String
 })
 
 const userSchema = new Schema ({

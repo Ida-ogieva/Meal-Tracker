@@ -1,6 +1,5 @@
 <%- include('../partials/header') %>
-<main>
-    <div>
+
     <% for (let post of meals.post){ %>
         <% if (post._id == id){ %>
             <p class="header"><%=post.date%></p>
@@ -11,7 +10,6 @@
         <% } %>
     <% } %>
     <a href="/meals/<%=id%>/edit"><input type="submit" value="edit"></a>
-    </div>
-</main>
+
 </body>
 </html>

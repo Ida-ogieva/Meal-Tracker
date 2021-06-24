@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
-<main>
-    <div>
-    <p class="header">Welcome, <%=details.name%></p>
-    <form action="/meals" method="POST" id="new-form">
+<main class="homescreen">
+    <div class="formpage">
+    <p class="header">Welcome, <span><%=details.name%></span></p>
+    <form action="/meals" method="POST" class="formdisplay">
         <label>Breakfast:</label>
         <input name="breakfast">
         <label>Lunch:</label>
@@ -12,7 +12,7 @@
         <label>Other:</label>
         <input name="other">
         <label>Date:</label>
-        <input name="date" type="date">
+        <input name="date" type="date" required>
         <input type="submit" value="log">
     </form>
     </div>
