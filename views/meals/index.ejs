@@ -2,16 +2,18 @@
 <main>
 <div class="formpage">
 <p class="header">Your Logs:</p>
+<div class="list"> 
     <% for (let post of meals.post){ %>
-        
+        <ul>
         <li><a href="/meals/<%=post._id%>" class="log"><%=post.date%></a>
-        <form action="/meals/<%=post._id%>?_method=DELETE" method="POST">
-            <button class="delete">delete</button>
+        <form action="/meals/<%=post._id%>?_method=DELETE" method="POST" class="delete-form">
+            <button class="delete">x</button>
         </form>
         
         </li>
-
+        </ul>
     <% } %>
+</div>
     </div>
 </main>
 </body>

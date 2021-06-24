@@ -13,7 +13,9 @@ main {
   grid-template-rows: 9fr 1fr;
 }
 
-
+.delete-form {
+  display: inline-block;
+}
 
 a {
   color: #00B7FF;
@@ -57,7 +59,7 @@ p {
 }
 
 .log {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .header {
@@ -67,11 +69,16 @@ p {
   margin: 5px;
 }
 
-li {
-  grid-column: 2/4;
+.list {
+  grid-column: 2/3;
   grid-row: 2/3;
+  overflow-wrap: break-word;
 }
 
+.list-items {
+  margin: auto;
+  
+}
 
 .formpage {
 
@@ -96,6 +103,9 @@ body > nav {
   height: 10vh;
 }
 
+.edit {
+  text-align: center;
+}
 
 nav > a {
   margin: 20px;
@@ -126,8 +136,9 @@ form * {
 }
 
 
-/* form input[type="submit"] {
-  grid-column: span 2;
+
+/* /* form input[type="submit"] {
+  grid-column: span 2; */
 
 
   /* /* width: 10rem;
@@ -146,10 +157,18 @@ input {
 }
 
 .delete {
-  width: 100px;
-  height: 30px;
+  color: red;
+  margin-top: 5px;
+  padding: 0px;
   font-size: 20px;
-  
+  width: 40px;
+  line-height: 25px;
+
+}
+
+.delete:active {
+  background-color: red;
+  color: aliceblue;
 }
 
 button {
@@ -159,6 +178,7 @@ button {
 span {
   color: red;
 }
+
 
 
 
