@@ -1,30 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<%- include('../partials/header') %>
+<main>
+<div>
     <form action="/meals/<%=id%>?_method=PUT" method="POST">
-        <label>Breakfast:
-            <input name="breakfast" value="<%=entry.breakfast %>">
-        </label><br>
-        <label>Lunch:
-            <input name="lunch" value="<%=entry.lunch%>">
-        </label><br>
-        <label>Dinner:
-            <input name="dinner" value="<%=entry.dinner%>">
-        </label><br>
-        <label>Other:
-            <input name="other" value="<%=entry.other%>">
-        </label><br>
-        <label>Date
-            <input name="date" value="<%=entry.date%>" type="date" >
-        </label><br>
+        <label>Breakfast:</label>
+        <input name="breakfast" value="<%=entry.breakfast %>">
+        <label>Lunch:</label>
+        <input name="lunch" value="<%=entry.lunch%>">
+        <label>Dinner:</label>
+        <input name="dinner" value="<%=entry.dinner%>">
+        <label>Other:</label>
+        <input name="other" value="<%=entry.other%>">        
+        <label>Date:</label>
+        <input name="date" value="<%=entry.date%>" type="date" >
         <input type="submit" value="log">
     </form>
+</div>
+</main>
 </body>
 </html>

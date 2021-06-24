@@ -1,22 +1,55 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color:lightgray;
+  background-color: white;
   margin: auto;
+  
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 4fr 1fr 2fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  height: 100vh
 }
 
 a {
   color: #00B7FF;
 }
 
+/* .form {
+  grid-column: 3/5;
+  grid-row: 2/3;
+} */
+
+form {
+  grid-column: 3/4;
+  grid-gap: 10px;
+  display: grid;
+  padding-right: 4rem;
+  
+  /* grid-template-columns: 0.5fr 1fr ; */
+} 
+
 p {
+  font-size: 25px;
+}
+
+.log {
+  font-size: 25px;
+}
+
+.header {
   font-size: 50px;
-  text-align: center;
+  text-align:center;
+  grid-column: 3/4;
 }
 
 
-
-
-
+div {
+  grid-column: 2/5;
+  grid-row: 1/4;
+  background-color: peachpuff;
+}
 
 
 body > nav {
@@ -29,21 +62,6 @@ body > nav {
 }
 
 
-
-body > main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #E8ECEB;
-  padding: 20px;
-  overflow-y: scroll;
-}
-
-body > main h1:first-child {
-  margin-bottom: 50px;
-}
-
 nav > a {
   margin: 20px;
   text-decoration: none;
@@ -54,59 +72,35 @@ nav > a {
 nav > a:hover {
   color: white;
   background-color: #424748;
+  transform: scale(1.8);
+}
+
+label {
+  grid-column: 1/2;
+  text-align:right;
 }
 
 
-#new-form {
-  
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 22rem));
-}
 
-#new-form *,
-#add-review-form *,
-#add-performer-form * {
-  font-size: 20px;
+form * {
+  font-size: 30px;
   padding: 5px;
   border-radius: 5px;
 }
 
-#new-form input[type="submit"] {
+
+/* form input[type="submit"] {
   grid-column: span 2;
-  width: 10rem;
+
+
+  /* /* width: 10rem;
   margin-left: auto;
+}  */
+
+input {
+  grid-column: 2 / 3;
 }
 
-table {
-  font-size: 20px;
-}
-
-table thead th {
-  padding: 5px;
-  border-bottom: 2px solid #424748;
-}
-
-table td {
-  padding: 10px;
-  text-align: center;
-}
-
-#list td:nth-child(2), #list td:nth-child(3){
-  min-width: 100px;
-}
-
-#list a {
-  border-radius: 4px;
-  background-color: #B8C0C2;
-  padding: 4px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-#list a:hover {
-  background-color: white;
-}
 
 #show-page {
   display: grid;
@@ -114,20 +108,13 @@ table td {
   grid-gap: 1rem;
 }
 
-#show-page div:nth-child(even) {
-  font-weight: bold;
+.delete {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  
 }
 
-#add-review-form,
-#add-performer-form {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 1rem;
-  margin-bottom: 2rem;
-}
 
-#add-review-form input[type="submit"],
-#add-performer-form input[type="submit"]  {
-  width: 10rem;
-  grid-column: 2 / 3;
-}
+
+

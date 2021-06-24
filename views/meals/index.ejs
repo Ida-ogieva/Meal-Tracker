@@ -1,13 +1,17 @@
 <%- include('../partials/header') %>
-<body>
+<main>
+<div>
+<p class="header">Your Logs:</p>
     <% for (let post of meals.post){ %>
-        <li><a href="/meals/<%=post._id%>"><%=post.date%></a>
+        <li><a href="/meals/<%=post._id%>" class="log"><%=post.date%></a>
         <form action="/meals/<%=post._id%>?_method=DELETE" method="POST">
-            <button>delete</button>
+            <button class="delete">delete</button>
         </form>
         </li>
 
-    <% } %>
 
+    <% } %>
+</div>
+</main>
 </body>
 </html>

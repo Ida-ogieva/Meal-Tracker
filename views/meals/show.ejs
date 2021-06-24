@@ -1,13 +1,17 @@
 <%- include('../partials/header') %>
+<main>
+    <div>
     <% for (let post of meals.post){ %>
         <% if (post._id == id){ %>
-            <li><%=post.date%></li>
-            <li><%=post.breakfast%></li>
-            <li><%=post.lunch%></li>
-            <li><%=post.dinner%></li>
-            <li><%=post.other%></li>
+            <p class="header"><%=post.date%></p>
+            <li class="log"><%=post.breakfast%></li>
+            <li class="log"><%=post.lunch%></li>
+            <li class="log"><%=post.dinner%></li>
+            <li class="log"><%=post.other%></li>
         <% } %>
     <% } %>
     <a href="/meals/<%=id%>/edit"><input type="submit" value="edit"></a>
+    </div>
+</main>
 </body>
 </html>
