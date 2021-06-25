@@ -6,7 +6,7 @@ To access the app, you must sign in via google. When logged in, you can add your
 
 ## Screenshots
 ![Landing-page](https://i.imgur.com/FMSbcrs.png)
-![index-view](https://imgur.com/C4BCLOm)
+![index-view](https://i.imgur.com/C4BCLOm.png?1)
 
 ## Technologies Used
 * HTML, CSS, MongoDB, Node.js Express.
