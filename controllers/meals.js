@@ -1,4 +1,4 @@
-// const Meal = require('../models/meal');
+
 const User = require('../models/user');
 
 module.exports = {
@@ -28,7 +28,6 @@ function edit(req, res){
         let id = req.params.id;
         for (let entry of log.post){
             if (entry._id == id){
-                console.log(entry);
                 res.render('meals/edit', {entry, id});
             }
         }
@@ -45,18 +44,10 @@ function deleteLog(req, res){
     }
 )};
 
-//     let incomingId = req.params.id;
-//     const postDoc = User.post.id('60d21e8d32d71f4ef1866462');
-//     console.log("this is", postDoc);
-//     User.findById(req.user.id, function(err, user){
-//         res.redirect('/meals');
-//     })
-// }
 
 function show(req, res){
     User.findById(req.user.id, function(err, meals){
         res.render('meals/show', {title: 'All Log', meals, id: req.params.id});
-        console.log(req.params.id);
     })
 }
 
@@ -76,7 +67,6 @@ function create(req, res) {
 }
 
 function newMeal(req, res) {
-    // console.log(req.user.name);
     res.render('meals/new', {
         details: req.user
     });

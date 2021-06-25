@@ -65,7 +65,7 @@ ul {
 }
 
 .background {
-  background-color:rgba(245, 222, 179, 0.9);
+  background-color:rgba(221, 217, 217, 0.9);
   text-align: center;
 }
 
@@ -74,7 +74,7 @@ ul {
   text-align:center;
   grid-column: 2/3;
   margin: auto;
-  background-color: rgba(245, 222, 179, 0.9);
+  background-color: rgba(221, 217, 217, 0.9);
   border: 1px solid black;
 }
 
@@ -82,7 +82,7 @@ ul {
   grid-column: 2/3;
   grid-row: 2/3;
   overflow-wrap: break-word;
-  background-color: rgba(245, 222, 179, 0.9);
+  background-color: rgba(221, 217, 217, 0.9);
 }
 
 .list-items {
