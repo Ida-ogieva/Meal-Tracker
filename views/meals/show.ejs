@@ -8,7 +8,7 @@
 
             <p class="header"><%=post.date%></p>
             <div class="list list-items">
-                <ul>
+            <ul>
             <% if (post.breakfast.length > 0){ %>
             <li class="log">You logged Breakfast as: <span><%=post.breakfast%></span></li><br>
             <% } %>
@@ -24,8 +24,8 @@
         <% } %>
     <% } %>
     <a  href="/meals/<%=id%>/edit" class="edit-button"><input type="submit" class="enter" value="Edit"></a>
-        </div>            
-</div>
-            </main>
+    </div>            
+    </div>
+</main>
 </body>
 </html>

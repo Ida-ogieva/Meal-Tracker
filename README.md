@@ -12,7 +12,8 @@ To access the app, you must sign in via google. When logged in, you can add your
 * HTML, CSS, MongoDB, Node.js Express.
 
 ## Getting Started
-http://meal-trackr-app.herokuapp.com/
+* http://meal-trackr-app.herokuapp.com/
+* [Trello-board](https://trello.com/b/DRPEi7KH/project-2)
 
 ## Next Steps
 * make app responsive.
