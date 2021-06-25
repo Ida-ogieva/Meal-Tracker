@@ -8,13 +8,15 @@
 
             <p class="header"><%=post.date%></p>
             <div class="list list-items">
+                <ul>
             <li class="log">You logged Breakfast as: <span><%=post.breakfast%></span></li><br>
             <li class="log">You logged Lunch as: <span><%=post.lunch%></span></li><br>
             <li class="log">You logged Dinner as: <span><%=post.dinner%></span></li><br>
             <li class="log">You logged other meals as: <span><%=post.other%></span></li><br>
+            </ul>
         <% } %>
     <% } %>
-    <a  href="/meals/<%=id%>/edit"><input type="submit" class="edit" value="edit"></a>
+    <a  href="/meals/<%=id%>/edit" class="edit-button"><input type="submit" class="edit" value="edit"></a>
         </div>            
 </div>
             </main>

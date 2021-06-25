@@ -1,8 +1,8 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: white;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: auto;
-  height: 100vh
+  height: 100vh;
+  background-color:rgba(221, 217, 217, 0.9);
   
 }
 
@@ -43,12 +43,13 @@ a {
   grid-column: 2/3;
   display: grid;
   grid-row: 2/3;
-  background-color: grey;
+  background-color: rgba(221, 217, 217, 0.9);
   font-size: 30px;
   padding: 30px;
-  border-radius: 5px;
   grid-gap: 40px;
   border: 1px solid black;
+  justify-content: center;
+  align-content: center;
   
   
   /* grid-template-columns: 0.5fr 1fr ; */
@@ -56,23 +57,42 @@ a {
 
 p {
   font-size: 25px;
+  
+}
+
+ul {
+  list-style-type: none;
 }
 
 .log {
-  font-size: 35px;
+  font-size: 25px;
+  color: blue;
+
+}
+
+.log-link:hover {
+  color: red;
+}
+
+.background {
+  background-color:rgba(245, 222, 179, 0.9);
+  text-align: center;
 }
 
 .header {
-  font-size: 50px;
+  font-size: 25px;
   text-align:center;
   grid-column: 2/3;
-  margin: 5px;
+  margin: auto;
+  background-color:khaki;
+  border: 1px solid black;
 }
 
 .list {
   grid-column: 2/3;
   grid-row: 2/3;
   overflow-wrap: break-word;
+  background-color: rgba(245, 222, 179, 0.9);
 }
 
 .list-items {
@@ -86,10 +106,11 @@ p {
   grid-template-rows: 1fr 9fr 1fr;
   grid-column: 2/3;
   grid-row: 1/3;
-  background-color: peachpuff;
+  background-image: url(https://images.unsplash.com/photo-1548940740-204726a19be3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG1lYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-size:cover;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 9fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 9fr 2fr;
 }
 
 
@@ -105,6 +126,13 @@ body > nav {
 
 .edit {
   text-align: center;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 30px;
 }
 
 nav > a {
@@ -129,9 +157,10 @@ label {
 
 
 form * {
-  font-size: 30px;
-  padding: 5px;
+  font-size: 20px;
+  height: fit-content;
   border-radius: 5px;
+
   /* text-align: center; */
 }
 
