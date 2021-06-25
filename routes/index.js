@@ -23,7 +23,7 @@ router.get('/oauth2callback', passport.authenticate(
 ));
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Meal Trackr' });
+  res.render('index', { title: 'Meal Tracker'});
 });
 
 module.exports = router;

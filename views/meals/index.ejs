@@ -5,7 +5,7 @@
 <div class="list background"> 
     <% for (let post of meals.post){ %>
         <ul>
-        <li><a href="/meals/<%=post._id%>" class="log log-link"><%=post.date%></a>
+        <li><%=post.date%> | <a href="/meals/<%=post._id%>" class="log log-link">View</a> |
         <form action="/meals/<%=post._id%>?_method=DELETE" method="POST" class="delete-form">
             <button class="delete">x</button>
         </form>

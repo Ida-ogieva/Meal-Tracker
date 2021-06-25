@@ -3,16 +3,16 @@
 <div class="formpage">
     <form action="/meals/<%=id%>?_method=PUT" method="POST" class="formdisplay">
         <label>Breakfast:</label>
-        <input name="breakfast" value="<%=entry.breakfast %>" required>
+        <input name="breakfast" value="<%=entry.breakfast %>">
         <label>Lunch:</label>
-        <input name="lunch" value="<%=entry.lunch%>" required>
+        <input name="lunch" value="<%=entry.lunch%>">
         <label>Dinner:</label>
-        <input name="dinner" value="<%=entry.dinner%>" required>
+        <input name="dinner" value="<%=entry.dinner%>">
         <label>Other:</label>
-        <input name="other" value="<%=entry.other%>" required>        
+        <input name="other" value="<%=entry.other%>">        
         <label>Date:</label>
         <input name="date" value="<%=entry.date%>" type="date" required>
-        <input type="submit" value="save changes">
+        <input type="submit" class="enter" value="save changes">
     </form>
 </div>
 </main>
